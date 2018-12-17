@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<main id="home">
+  <div class="title-box">
+    <div class="title-text">
+      The New Bill of Rights
+    </div>
+    <div class="subtitle-text">
+      by Willie Chalmers III
+    </div>
   </div>
+  <div class="button-container">
+    <!-- TODO: Bottom right align on mobile -->
+  </div>
+</main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld,
+  methods: {
+    startPresentation() {
+      // TODO: Use router to start presentation
+    },
   },
 };
 </script>
