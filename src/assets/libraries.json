@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Vue.js",
+    "url": "https://vuejs.org"
+  },
+  {
+    "name": "Firebase Hosting",
+    "url": "https://firebase.google.com"
+  },
+  {
+    "name": "Airtable",
+    "url": "https://airtable.com"
+  },
+  {
+    "name": "Accelerated Mobile Pages (AMP)",
+    "url": "https://www.ampproject.org"
+  },
+  {
+    "name": "vue-amp-shadow",
+    "url": "https://github.com/yukagil/vue-amp-shadow"
+  },
+  {
+    "name": "Visual Studio Code",
+    "url": "https://code.visualstudio.com/"
+  }
+]
