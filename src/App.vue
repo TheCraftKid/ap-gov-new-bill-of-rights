@@ -1,29 +1,58 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="toolbar">
+      <div class="toolbar-contents">
+        <div class="nav-button-container">
+          <i class="material-icons">menu</i>
+        </div>
+        <router-link to="/" tag="span" class="clickable-title-box">New Bill of Rights</router-link>
+      </div>
     </div>
-    <router-view/>
+    <div class="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
+@import "./styles/theme";
+
+html,
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  height: 100vh;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+
+.toolbar {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+  padding: 0px 16px;
+  background: $primary-color;
+  color: $text-on-primary;
+
+  .toolbar-contents {
+    display: inline-flex;
   }
+
+  .clickable-title-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+}
+
+.content {
+  height: 100%;
 }
 </style>
