@@ -1,26 +1,38 @@
 # Willie's (Experimental) Bill of Rights
 
 ## Project setup
-```
-npm install
+This project uses Airtable as its backend. Go to your Airtable account to get
+your API Key, and then put it into an environment variable named `AIRTABLE_API_KEY`
+in a `.env.local` file at the root of the project:
+
+```bash
+AIRTABLE_API_KEY="key12345678912345
 ```
 
-### Compiles and hot-reloads for development
+To begin delopment, run `npm install` to fetch dependencies.
+
+### Hot-reload for Web App
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Deploying for Production
+This project uses Firebase Hosting to deploy the web app. Make sure you have a
+Firebase account and run `firebase login` to authenticate.
 
-### Run your tests
+Then run the deploy command:
+```
+npm run deploy:
+```
+This will build and minify the web app, outputting it to the `dist` folder, and
+it will deploy the site to Firebase Hosting.
+
+### Runng Tests
 ```
 npm run test
 ```
 
-### Lints and fixes files
+### Linting Files
 ```
 npm run lint
 ```
