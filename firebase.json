@@ -16,6 +16,14 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/amp/amendment",
+        "function": "renderAmendmentAMP"
+      },
+      {
+        "source": "/amendments",
+        "function": "fetchAmendmentIds"
       }
     ]
   }
