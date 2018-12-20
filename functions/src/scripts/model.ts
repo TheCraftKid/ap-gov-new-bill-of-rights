@@ -34,6 +34,7 @@ export interface Article {
    * The URL of this article.
    */
   readonly link: string;
+
   /**
    * The name of the publication/source that provided `link`.
    */
